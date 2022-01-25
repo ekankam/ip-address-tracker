@@ -1,0 +1,63 @@
+@use 'variables' as *;
+
+.header {
+    background: url('../starter-files/images/pattern-bg.png');
+    background-position: center;
+    background-size: cover;
+    height: 30rem;
+    padding-top: 3rem;
+    text-align: center;
+
+    &__intro {
+        color: $white;
+        text-transform: capitalize;
+        margin-bottom: 2rem;
+    }
+
+    &__form {
+        display: flex;
+        align-items: center;
+        max-width: 50rem;
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 1rem;
+        overflow: hidden;
+
+        background-color: $white;
+        input {
+            flex: 5;
+            padding: 1.5rem 0.5rem;
+            font-size: 1.9rem;
+            border: none;
+            // outline: none;
+
+            &::placeholder {
+                font-family: inherit;
+                font-size: 1.6rem;
+            }
+        }
+
+        button {
+            flex: 1;
+            align-self: stretch;
+            background-color: $very-dark-gray;
+            border: none;
+            outline: none;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $light-dark-gray;
+            }
+        }
+    }
+}
+
+.prev-text {
+    padding: 0 1rem;
+    color: $very-dark-gray;
+    display: none;
+}
+
+.show-prev-text {
+    display: block;
+}
