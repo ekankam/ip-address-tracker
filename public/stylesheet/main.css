@@ -91,6 +91,7 @@ body {
   background-color: #fffefe;
   border-radius: 1rem;
   padding: 2.5rem;
+  z-index: 9999;
 }
 .tracker__content {
   flex: 1;
@@ -117,8 +118,9 @@ body {
 }
 
 .map {
+  width: 100%;
   height: 100vh;
-  background-color: lightblue;
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -74,7 +74,7 @@ const App = () => {
                 isLoading={isLoading}
             />
 
-            <Map />
+            <Map iPData={iPData} isLoading={isLoading} />
         </div>
     )
 }
