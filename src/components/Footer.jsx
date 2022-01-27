@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
     return (
         <footer className="footer">
-            <div class="attribution">
+            <div className="attribution">
                 Challenge by{' '}
                 <a
                     href="https://www.frontendmentor.io?ref=challenge"
@@ -12,7 +12,7 @@ const Footer = () => {
                 >
                     Frontend Mentor
                 </a>
-                . Coded by{' '}
+                . Coded by
                 <a
                     href="https://github.com/ekankam/ip-address-tracker"
                     rel="noreferrer"
