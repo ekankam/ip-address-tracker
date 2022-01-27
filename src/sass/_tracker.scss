@@ -1,0 +1,45 @@
+@use 'variables' as *;
+
+.tracker {
+    display: flex;
+    max-width: 95rem;
+    width: 97%;
+    min-height: 10rem;
+
+    position: absolute;
+    top: 19rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: $white;
+    border-radius: 1rem;
+    padding: 2.5rem;
+
+    &__content {
+        flex: 1;
+
+        &:last-child {
+            padding-left: 1rem;
+        }
+
+        .title {
+            font-size: 1.2rem;
+            color: $dark-gray;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .info {
+            margin-top: 1rem;
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: $very-dark-gray;
+        }
+    }
+
+    .border {
+        border-right: 1px solid #e7e7e7f8;
+        border-left: 1px solid #e7e7e7f8;
+        padding-left: 1rem;
+    }
+}

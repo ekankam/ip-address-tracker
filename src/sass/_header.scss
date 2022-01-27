@@ -4,7 +4,7 @@
     background: url('../starter-files/images/pattern-bg.png');
     background-position: center;
     background-size: cover;
-    height: 30rem;
+    height: 25rem;
     padding-top: 3rem;
     text-align: center;
 
@@ -18,7 +18,7 @@
         display: flex;
         align-items: center;
         max-width: 50rem;
-        width: 100%;
+        width: 95%;
         margin: 0 auto;
         border-radius: 1rem;
         overflow: hidden;
@@ -29,7 +29,6 @@
             padding: 1.5rem 0.8rem;
             font-size: 1.9rem;
             border: none;
-            // outline: none;
 
             &::placeholder {
                 font-family: inherit;
@@ -53,11 +52,11 @@
 }
 
 .prev-text {
-    padding: 0 1rem;
     color: $very-dark-gray;
     display: none;
 }
 
 .show-prev-text {
     display: block;
+    padding: 0 1rem;
 }

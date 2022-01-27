@@ -28,7 +28,7 @@ body {
   background: url("../starter-files/images/pattern-bg.png");
   background-position: center;
   background-size: cover;
-  height: 30rem;
+  height: 25rem;
   padding-top: 3rem;
   text-align: center;
 }
@@ -41,7 +41,7 @@ body {
   display: flex;
   align-items: center;
   max-width: 50rem;
-  width: 100%;
+  width: 95%;
   margin: 0 auto;
   border-radius: 1rem;
   overflow: hidden;
@@ -70,13 +70,55 @@ body {
 }
 
 .prev-text {
-  padding: 0 1rem;
   color: #2b2b2b;
   display: none;
 }
 
 .show-prev-text {
   display: block;
+  padding: 0 1rem;
+}
+
+.tracker {
+  display: flex;
+  max-width: 95rem;
+  width: 97%;
+  min-height: 10rem;
+  position: absolute;
+  top: 19rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fffefe;
+  border-radius: 1rem;
+  padding: 2.5rem;
+}
+.tracker__content {
+  flex: 1;
+}
+.tracker__content:last-child {
+  padding-left: 1rem;
+}
+.tracker__content .title {
+  font-size: 1.2rem;
+  color: #969696;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.tracker__content .info {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #2b2b2b;
+}
+.tracker .border {
+  border-right: 1px solid #e7e7e7f8;
+  border-left: 1px solid #e7e7e7f8;
+  padding-left: 1rem;
+}
+
+.map {
+  height: 100vh;
+  background-color: lightblue;
 }
 
 /*# sourceMappingURL=main.css.map */
