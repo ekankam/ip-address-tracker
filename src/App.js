@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Footer from './components/Footer'
 import Header from './components/Header'
 import Map from './components/Map'
 import Spinner from './components/Spinner'
@@ -76,6 +77,7 @@ const App = () => {
             />
             <Map iPData={iPData} isLoading={isLoading} />
             <Spinner isLoading={isLoading} />
+            <Footer />
         </div>
     )
 }

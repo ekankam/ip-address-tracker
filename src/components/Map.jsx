@@ -28,8 +28,10 @@ const Map = ({ iPData, isLoading }) => {
                         {geoData.lat && geoData.lng && (
                             <Marker position={[lat, lng]}>
                                 <Popup>
-                                    A pretty CSS3 popup. <br /> Easily
-                                    customizable.
+                                    {iPData?.location?.city},
+                                    {iPData?.location?.region}
+                                    <br />
+                                    {iPData?.location?.postalCode}
                                 </Popup>
                             </Marker>
                         )}
