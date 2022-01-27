@@ -22,24 +22,34 @@
         margin: 0 auto;
         border-radius: 1rem;
         overflow: hidden;
-
         background-color: $white;
-        input {
-            flex: 5;
-            padding: 1.5rem 0.8rem;
-            font-size: 1.9rem;
-            border: none;
 
-            &::placeholder {
-                font-family: inherit;
-                font-size: 1.6rem;
+        .input-box {
+            flex: 1;
+
+            input {
+                width: 100%;
+                padding: 1.4rem 0.5rem;
+                font-size: 1.9rem;
+                outline: 0;
+
+                &::placeholder {
+                    font-family: inherit;
+                    font-size: 1.7rem;
+                }
+
+                &:focus {
+                    border: 4px solid $han-blue;
+                    border-top-left-radius: 1rem;
+                    border-bottom-left-radius: 1rem;
+                }
             }
         }
 
         button {
-            flex: 1;
-            align-self: stretch;
             background-color: $very-dark-gray;
+            align-self: stretch;
+            width: 5rem;
             border: none;
             outline: none;
             cursor: pointer;
@@ -58,5 +68,5 @@
 
 .show-prev-text {
     display: block;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
 }
