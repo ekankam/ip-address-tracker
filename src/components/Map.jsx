@@ -7,8 +7,6 @@ const Map = ({ iPData, isLoading }) => {
     const lat = iPData?.location?.lat
     const lng = iPData?.location?.lng
 
-    // console.log(lat, lng)
-
     useEffect(() => {
         setGeoData({ lat, lng })
     }, [lat, lng])

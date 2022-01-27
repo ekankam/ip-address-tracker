@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Header from './components/Header'
 import Map from './components/Map'
+import Spinner from './components/Spinner'
 
 const App = () => {
     const [iPData, setIPData] = useState({})
@@ -73,8 +74,8 @@ const App = () => {
                 iPData={iPData}
                 isLoading={isLoading}
             />
-
             <Map iPData={iPData} isLoading={isLoading} />
+            <Spinner isLoading={isLoading} />
         </div>
     )
 }

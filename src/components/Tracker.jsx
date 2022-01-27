@@ -1,7 +1,8 @@
 import React from 'react'
+import Spinner from './Spinner'
 
 const Tracker = ({ iPData, isLoading }) => {
-    if (isLoading) return <h2>Loading...</h2>
+    if (isLoading) return <Spinner/>
     return (
         <>
             {!isLoading && (
