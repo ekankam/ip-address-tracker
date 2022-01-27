@@ -92,6 +92,8 @@ body {
   border-radius: 1rem;
   padding: 2.5rem;
   z-index: 9999;
+  -webkit-box-shadow: 2px 10px 34px -1px rgba(0, 0, 0, 0.33);
+  box-shadow: 2px 10px 34px -1px rgba(0, 0, 0, 0.33);
 }
 .tracker__content {
   flex: 1;
@@ -115,6 +117,24 @@ body {
   border-right: 1px solid #e7e7e7f8;
   border-left: 1px solid #e7e7e7f8;
   padding-left: 1rem;
+}
+@media screen and (max-width: 690px) {
+  .tracker {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  .tracker__content {
+    width: 100%;
+  }
+  .tracker__content .info {
+    font-size: 1.9rem;
+  }
+  .tracker .border {
+    border-right: none;
+    border-left: none;
+    padding-left: 0;
+  }
 }
 
 .map {
